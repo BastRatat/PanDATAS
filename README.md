@@ -6,4 +6,4 @@ Following the 5 weeks weekly classes, we decided to meet up in order to deploy o
 
 This repo aims at keeping tracks of our progresses.
 
-Bastien Rratat
+Bastien Ratat

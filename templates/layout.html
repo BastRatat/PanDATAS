@@ -6,22 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"href="static/main.css">
 
     <!-- Flask title -->
-	{% if title %}
-		<title>Bastien's app - {{ title }}</title>
-	{% else %}
-		<title>Bastien's app</title>
-	{% endif %}
+		<title>Portfolio</title>
+		
 </head>
 <body>
 	<header>
 		<nav>
 			<ul>
-				<li><a href="/">{{ pages[0] }}</li>
-				<li><a href="/about">{{ pages[1] }}</li>
-				<li><a href="/products">{{ pages[2] }}</li>
+				<li><a href="/">{{ pages[0] }}</a></li>
+				<li><a href="/about">{{ pages[1] }}</a></li>
 			</ul>
 		</nav>
 		
@@ -29,10 +25,10 @@
 
 	
 
-	<div class="container">
-		{% block content %}
-		{% endblock %}
-	</div>
+<div class="container">
+	{% block content %}
+	{% endblock %}
+</div>
 	
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

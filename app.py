@@ -30,10 +30,19 @@ presentations = {
 				    knowledgeable & ingenious Visionary, bring change and 
 				    innovation via creative performance & solutions.
 			    """,
-	"Bastien":  """  From Lyon, France, Bastien landed in Chendgu in 
-				    2014. Student, entrepreneur, civil servant, he's
-				    now heading to work in the tech world after he
-				    dove into programming.
+	"Bastien":  """ From France, Bastien landed in Chendgu in 
+				    2014 after his graduation from ISG Business School.
+				    He spent his two first years in China studying mandarin and
+				    preparing the Chartered Financial Analyst certification within the
+				    double-top excellence programme of applied economics in SWUFE.
+				    Fluent in chinese, english and french, Bastien and his brother 
+				    launched an education center in 2017. From January 2018 to
+				    January 2020, he then was in charge of promoting France
+				    education in the Consulate General of France in Chengdu.
+				    Bastien's strong mathematical background combined with 
+				    analytical and econometrics skills brings valuable data-driven
+				    insights.
+
 				"""
 }
 

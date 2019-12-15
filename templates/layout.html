@@ -25,28 +25,26 @@
 	{% block content %}
 	{% endblock %}
 </div>
-    <nav>
-        <ul>
-            <li><a href="/">{{ pages[0] }}</a></li>
-            <li><a href="/about">{{ pages[1] }}</a></li>
-            <li><a href="/data_visualization">{{ pages[2] }}</a></li>
-            <li><a href="/data_scraping">{{ pages[3] }}</a></li>
-            <li><a href="/statistics">{{ pages[4] }}</a></li>
-        </ul>
-    </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="https://i.postimg.cc/PfSv3G7v/logo-white.png" width="50" height="50" class="d-inline-block align-top" alt="">
+      </a>
       <a class="navbar-brand" href="/">PANDATAS</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="/">{{ pages[0] }}<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/about">{{ pages[1] }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="/data_visualization">{{ pages[2] }}</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/data_scraping">{{ pages[3] }}</a>

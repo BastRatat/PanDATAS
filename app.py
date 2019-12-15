@@ -1,7 +1,7 @@
 """
 Author : Daniel & Bastien
 Date : 15/12/2019
-app main file
+app main
 """
 
 from flask import Flask, render_template, url_for
@@ -37,7 +37,7 @@ presentations = {
 				"""
 }
 
-pages = ["Homepage", "About"]
+pages = ["Homepage", "About", "Data visualization", "Data scraping", "Statistics"]
 names = ["Daniel Biskupski", "Bastien Ratat"]
 
 app = Flask(__name__)
@@ -50,6 +50,18 @@ def home():
 @app.route('/about')
 def about():
     return render_template("about.html", pages=pages, names=names, presentations=presentations)
+
+@app.route('/data_visualization')
+def data_visualization():
+	return render_template("data_visualization.html", pages=pages)
+
+@app.route('/data_scraping')
+def data_scraping():
+	return render_template("data_scraping.html", pages=pages)
+
+@app.route('/statistics')
+def statistics():
+	return render_template("statistics.html", pages=pages)
 
 if __name__ == '__main__':
 	app.run(debug=True)

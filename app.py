@@ -1,3 +1,9 @@
+"""
+Author : Daniel & Bastien
+Date : 15/12/2019
+app main file
+"""
+
 from flask import Flask, render_template, url_for
 
 articles = {

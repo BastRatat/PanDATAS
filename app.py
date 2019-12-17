@@ -43,6 +43,12 @@ presentations = {
 				    analytical and econometrics skills brings valuable data-driven
 				    insights.
 
+				""",
+	"Michael":  """Curious, analytical and techie by nature. After years of 'playing' 
+				with data, Michael now wants to make it his career. Data Scientist in the making...
+				He already owns Bachelor and Master's degrees in Computer Sciences
+				respectively from University of Cape Coast and University of
+				Electronic Science and Technology.
 				"""
 				,
 	"Michael":  """ Curious, analytical and optimistic by nature with a strong background
@@ -55,6 +61,7 @@ presentations = {
 }
 
 pages = ["Homepage", "About", "Data visualization", "Data scraping", "Statistics"]
+
 names = ["Daniel Biskupski", "Bastien Ratat", "Michael O. Mills"]
 
 app = Flask(__name__)

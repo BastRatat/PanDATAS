@@ -1,5 +1,5 @@
 """
-Author : Daniel & Bastien
+Author : Daniel, Bastien & Michael
 Date : 15/12/2019
 app main
 """
@@ -50,10 +50,19 @@ presentations = {
 				respectively from University of Cape Coast and University of
 				Electronic Science and Technology.
 				"""
+				,
+	"Michael":  """ Curious, analytical and optimistic by nature with a strong background
+					in Computer Science: Bachelors in Computer Science and in 2019,
+					graduated with a M.Eng in Computer Science and Technology from UESTC, China. 
+					Recently, I have invested into training to become a full-fledged Data Scientist.
+					First, through Le Wagon Chengdu and currently Master of Data Science at ELU, Amsterdam.
+					I hope to be fully ready for the world of work by mid-2020.
+				"""
 }
 
 pages = ["Homepage", "About", "Data visualization", "Data scraping", "Statistics"]
-names = ["Daniel Biskupski", "Bastien Ratat", "Michael Odartei Mills"]
+
+names = ["Daniel Biskupski", "Bastien Ratat", "Michael O. Mills"]
 
 app = Flask(__name__)
 

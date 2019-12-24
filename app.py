@@ -45,12 +45,15 @@ presentations = {
 
 				""",
 
-        "Michael":  """ Curious, analytical and optimistic by nature with a strong background
-					in Computer Science: Bachelors in Computer Science and in 2019,
-					graduated with a M.Eng in Computer Science and Technology from UESTC, China.
-					Recently, I have invested into training to become a full-fledged Data Scientist.
-					First, through Le Wagon Chengdu and currently Master of Data Science at ELU, Amsterdam.
-					I hope to be fully ready for the world of work by mid-2020.
+	
+	"Michael":  """ Curious, analytical and optimistic by nature with a strong background
+					in Computer Science: Bachelors in Computer Science from UCC, Ghana and in 2019,
+					M.Eng in Computer Science and Technology from UESTC, China. 
+					He has an accumulated 2 years experience with minor Data Analytics tasks with
+					Google Analytics and Microsoft Excel. Recently, he has invested into training to 
+					become a full-fledged Data Scientist first, through Le Wagon Chengdu and currently
+					studying Master of Data Science at ELU, Netherlands. He hopes to be ready for 
+					the world of work by mid-2020.
 				"""
 }
 

@@ -1,8 +1,52 @@
-h1 {
-    color: blue;
+body {
+        background: url(https://cdn.hipwallpaper.com/i/7/49/TaS1s0.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
 
-.sub-header {
-  background: url("https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat center center fixed;
-  background-size: auto;
+.home_quote {
+    color: white;
+}
+
+.quote_author {
+    color: white;
+    font-style: italic;
+}
+
+h1 {
+    color: white;
+    padding-bottom: 30px;
+}
+
+.introduction {
+    color: white;
+}
+
+.lk {
+    float: right;
+}
+
+.name {
+    float: left;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 25px;
+
+}
+
+.description {
+    text-align: justify;
+    clear: both;
+    padding: 5px 20px 5px 20px;
+    font-size: 12px;
+    background-color: black;
+    background
+
+}
+
+a {
+    color: inherit;
 }

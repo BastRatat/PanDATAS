@@ -7,14 +7,30 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     <!-- Flask title -->
 		<title>Portfolio</title>
+    <script type="text/javascript">
+    function changeColor_orangered(obj) {
+            if (obj.style.color == 'orangered') {
+                obj.style.color = 'white';
+            } else {
+                obj.style.color = ' orangered';
+            }
+        }
+
+    function changeBgColor(obj, colorName) {
+            obj.style.backgroundColor = colorName;
+        }
+
+    function scaleUp(obj, size) {
+            obj.style.fontSize = size;
+        }
+    </script>
 
 </head>
 <body>
-	
+
 <div class="container">
 	{% block content %}
 	{% endblock %}
@@ -25,26 +41,26 @@
       <a class="navbar-brand" href="#">
         <img src="https://i.postimg.cc/TYLdxBts/logo-smaller.png" width="50" height="50" class="d-inline-block align-top" alt="">
       </a>
-      <a class="navbar-brand" href="/">PanDATAS</a>
+      <a class="navbar-brand" onmouseover="changeColor_orangered(this)" onmouseout="changeColor_orangered(this)" href="/">PanDATAS</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="/">{{ pages[0] }}</a>
+            <a class="nav-link" onmouseover="changeColor_orangered(this)" onmouseout="changeColor_orangered(this)" href="/">{{ pages[0] }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about">{{ pages[1] }}</a>
+            <a class="nav-link" onmouseover="changeColor_orangered(this)" onmouseout="changeColor_orangered(this)" href="/about">{{ pages[1] }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/data_visualization">{{ pages[2] }}</a>
+            <a class="nav-link" onmouseover="changeColor_orangered(this)" onmouseout="changeColor_orangered(this)" href="/data_visualization">{{ pages[2] }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/data_scraping">{{ pages[3] }}</a>
+            <a class="nav-link" onmouseover="changeColor_orangered(this)" onmouseout="changeColor_orangered(this)" href="/data_scraping">{{ pages[3] }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/statistics">{{ pages[4] }}</a>
+            <a class="nav-link" onmouseover="changeColor_orangered(this)" onmouseout="changeColor_orangered(this)" href="/statistics">{{ pages[4] }}</a>
           </li>
         </ul>
       </div>

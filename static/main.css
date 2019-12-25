@@ -45,10 +45,14 @@ body {
     text-align: justify;
     clear: both;
     padding: 5px 20px 5px 20px;
-    font-size: 12px;
+    font-size: 13px;
     background-color: black;
     color: lightgray;
 
+}
+
+a:link {
+    text-decoration: none;
 }
 
 a {
@@ -58,5 +62,53 @@ a {
 .page-title {
     padding-top: 30px;
     padding-bottom: 30px;
+    color: turquoise;
+}
+
+.navbar {
+    padding-left: 450px;
+}
+
+.tabs-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.homepage-links {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    color: white;
+}
+
+.homepage-links:hover {
+    text-decoration: none;
+    color: turquoise;
+}
+
+.visualization, .scraping, .statistics {
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    width: 180px;
+    height: 50px;
+    float: left;
+    background-color: black;
+}
+
+.homepage-header {
+    position: fixed;
+    top: 0;
+    margin-bottom: 5%;
+}
+
+.lk:hover {
+    text-decoration: none;
     color: turquoise;
 }

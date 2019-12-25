@@ -1,5 +1,19 @@
 {% extends "layout.html" %}
 {% block content %}
-	<h1 class="home_quote">{{ '"Information is the oil of the 21st century, and analytics is the combustion engine"'.upper() }}</h1>
-    <h2 class="quote_author">- Peter Sondergaard</h2>
+    <div homepage-header>
+        <h1 class="home_quote">{{ '"Information is the oil of the 21st century, and analytics is the combustion engine"'.upper() }}</h1>
+        <h2 class="quote_author">- Peter Sondergaard</h2>
+    </div>
+
+    <div class="tabs-container">
+        <div class="container visualization">
+            <a class="homepage-links" href="/data_visualization">{{ pages[2].upper() }}</a>
+        </div>
+        <div class="container scraping">
+            <a class="homepage-links" href="/data_scraping">{{ pages[3].upper() }}</a>
+        </div>
+        <div class="container statistics">
+            <a class="homepage-links" href="/statistics">{{ pages[4].upper() }}</a>
+        </div>
+    </div>
 {% endblock content %}

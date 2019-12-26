@@ -32,7 +32,16 @@
 <body>
 
 <div class="container">
-	{% block content %}
+  {% with messages = get_flashed_messages(with_categories=true) %}
+	 {% if messages%}
+    {% for category, message in messages %}
+      <div class="alert alert-{{ category }}">
+        {{ message }}
+      </div>
+    {% endfor %}
+   {% endif %}
+  {% endwith%}
+  {% block content %}
 	{% endblock %}
 </div>
 
@@ -48,19 +57,25 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" onmouseover="changeColor_turquoise(this)" onmouseout="changeColor_turquoise(this)" href="/">{{ pages[0] }}</a>
+            <a class="nav-link" onmouseover="changeColor_turquoise(this)" onmouseout="changeColor_turquoise(this)" href="{{ url_for('home')}}">{{ pages[0] }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onmouseover="changeColor_turquoise(this)" onmouseout="changeColor_turquoise(this)" href="/about">{{ pages[1] }}</a>
+            <a class="nav-link" onmouseover="changeColor_turquoise(this)" onmouseout="changeColor_turquoise(this)" href="{{ url_for('about')}}">{{ pages[1] }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onmouseover="changeColor_turquoise(this)" onmouseout="changeColor_turquoise(this)" href="/data_sourcing">{{ pages[3] }}</a>
+            <a class="nav-link" onmouseover="changeColor_turquoise(this)" onmouseout="changeColor_turquoise(this)" href="{{ url_for('data_sourcing')}}">{{ pages[3] }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onmouseover="changeColor_turquoise(this)" onmouseout="changeColor_turquoise(this)" href="/data_visualization">{{ pages[2] }}</a>
+            <a class="nav-link" onmouseover="changeColor_turquoise(this)" onmouseout="changeColor_turquoise(this)" href="{{ url_for('data_visualization')}}">{{ pages[2] }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onmouseover="changeColor_turquoise(this)" onmouseout="changeColor_turquoise(this)" href="/statistics">{{ pages[4] }}</a>
+            <a class="nav-link" onmouseover="changeColor_turquoise(this)" onmouseout="changeColor_turquoise(this)" href="{{ url_for('statistics')}}">{{ pages[4] }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onmouseover="changeColor_turquoise(this)" onmouseout="changeColor_turquoise(this)" href="{{ url_for('register')}}">{{ pages[5] }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onmouseover="changeColor_turquoise(this)" onmouseout="changeColor_turquoise(this)" href="{{ url_for('login')}}">{{ pages[6] }}</a>
           </li>
         </ul>
       </div>

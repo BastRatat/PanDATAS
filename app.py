@@ -4,7 +4,12 @@ Date : 15/12/2019
 app main
 """
 
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, flash, redirect
+from forms import RegistrationForm, LoginForm
+
+app = Flask(__name__)
+
+app.config['SECRET_KEY'] = 'a143a00ad781a29b0f7e7c548d57348f'
 
 articles = {
     "title": "post",
@@ -58,11 +63,9 @@ presentations = {
 }
 
 pages = ["Homepage", "About", "Data visualization",
-         "Data sourcing", "Statistics"]
+         "Data sourcing", "Statistics", "Register", "Login"]
 
 names = ["Daniel BISKUPSKI", "Bastien RATAT", "Michael O. MILLS"]
-
-app = Flask(__name__)
 
 
 @app.route('/')
@@ -82,13 +85,34 @@ def data_visualization():
 
 
 @app.route('/data_sourcing')
-def data_scraping():
+def data_sourcing():
     return render_template("data_sourcing.html", pages=pages)
 
 
 @app.route('/statistics')
 def statistics():
     return render_template("statistics.html", pages=pages)
+
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    form = RegistrationForm()
+    if form.validate_on_submit():
+        flash(f'Account created for {form.username.data}!', 'success')
+        return redirect(url_for("home"))
+    return render_template("register.html", pages=pages, form=form)
+
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    form = LoginForm()
+    if form.validate_on_submit():
+        if form.email.data == "bastien.ratat@gmail.com" and form.password.data == "password":
+            flash("You have been logged in!", "success")
+            return redirect(url_for("home"))
+        else:
+            flash('Login unsuccessfull. Please check username and password', 'danger')
+    return render_template("login.html", pages=pages, form=form)
 
 
 if __name__ == '__main__':

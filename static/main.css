@@ -74,7 +74,6 @@ a {
 .navbar {
     padding-left: 33%;
     position: fixed;
-
 }
 
 .tabs-container {
@@ -119,4 +118,12 @@ a {
 .lk:hover {
     text-decoration: none;
     color: turquoise;
+}
+
+.fieldset {
+    color: white;
+}
+
+.legend {
+    color: white;
 }

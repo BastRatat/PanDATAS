@@ -8,7 +8,7 @@ from flask import Flask, render_template, url_for, flash, redirect
 from forms import RegistrationForm, LoginForm
 
 app = Flask(__name__)
-
+app.debug = True
 app.config['SECRET_KEY'] = 'a143a00ad781a29b0f7e7c548d57348f'
 
 articles = {

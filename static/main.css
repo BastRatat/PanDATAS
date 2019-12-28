@@ -120,10 +120,12 @@ a {
     color: turquoise;
 }
 
-.fieldset {
+.register_form {
+    position: absolute;
     color: white;
+    left:33%;
 }
 
-.legend {
-    color: white;
+.form-group {
+    display: inline-block;
 }

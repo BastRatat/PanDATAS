@@ -65,33 +65,46 @@ presentations = {
 pages = ["Homepage", "About", "Data visualization",
          "Data sourcing", "Statistics", "Register", "Login"]
 
+routes = ['home', 'about', 'data_visualization',
+          'data_sourcing', 'statistics', 'register', 'login']
+
 names = ["Daniel BISKUPSKI", "Bastien RATAT", "Michael O. MILLS"]
+
+dictio = {
+    "Homepage": "home",
+    "About": "about",
+    "Data visualization": "data_visualization",
+    "Data sourcing": "data_sourcing",
+    "Statistics": "statistics",
+    "Register": "register",
+    "Login": "login",
+}
 
 
 @app.route('/')
 @app.route('/home')
 def home():
-    return render_template("home.html", articles=articles, pages=pages)
+    return render_template("home.html", articles=articles, pages=pages, dictio=dictio)
 
 
 @app.route('/about')
 def about():
-    return render_template("about.html", pages=pages, names=names, presentations=presentations)
+    return render_template("about.html", pages=pages, names=names, presentations=presentations, dictio=dictio)
 
 
 @app.route('/data_visualization')
 def data_visualization():
-    return render_template("data_visualization.html", pages=pages)
+    return render_template("data_visualization.html", pages=pages, dictio=dictio)
 
 
 @app.route('/data_sourcing')
 def data_sourcing():
-    return render_template("data_sourcing.html", pages=pages)
+    return render_template("data_sourcing.html", pages=pages, dictio=dictio)
 
 
 @app.route('/statistics')
 def statistics():
-    return render_template("statistics.html", pages=pages)
+    return render_template("statistics.html", pages=pages, dictio=dictio)
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -100,7 +113,7 @@ def register():
     if form.validate_on_submit():
         flash(f'Account created for {form.username.data}!', 'success')
         return redirect(url_for("home"))
-    return render_template("register.html", pages=pages, form=form)
+    return render_template("register.html", pages=pages, form=form, dictio=dictio)
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -112,7 +125,7 @@ def login():
             return redirect(url_for("home"))
         else:
             flash('Login unsuccessfull. Please check username and password', 'danger')
-    return render_template("login.html", pages=pages, form=form)
+    return render_template("login.html", pages=pages, form=form, dictio=dictio)
 
 
 if __name__ == '__main__':

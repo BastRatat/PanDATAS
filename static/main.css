@@ -1,5 +1,5 @@
 body {
-        background: url(https://cdn.hipwallpaper.com/i/7/49/TaS1s0.jpg) no-repeat center center fixed;
+        background: url(https://s2.ax1x.com/2019/12/28/lmzdAS.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -13,7 +13,7 @@ body {
 
 .home_quote {
     position: absolute;
-    margin-top: 10%;
+    margin-top: 7%;
     color: lightgray;
     font-size: 25px;
     font-family: "Roboto Condensed", sans-serif;
@@ -26,7 +26,7 @@ body {
     color: lightgray;
     font-style: italic;
     font-size: 25px;
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 .introduction {
@@ -72,8 +72,9 @@ a {
 }
 
 .navbar {
-    padding-left: 33%;
+    padding-left: 18%;
     position: fixed;
+    font-size: 0.8em;
 }
 
 .tabs-container {
